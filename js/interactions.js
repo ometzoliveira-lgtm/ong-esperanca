@@ -11,6 +11,8 @@ export function configurarTema() {
 
   botao.classList.add("theme-button");
 
+  botao.setAttribute("aria-label", "Ativar modo escuro");
+
   document.body.prepend(botao);
 
 
@@ -24,6 +26,11 @@ export function configurarTema() {
 
     botao.textContent =
       modoEscuro ? "☀️" : "🌙";
+
+    botao.setAttribute(
+      "aria-label",
+      modoEscuro ? "Ativar modo claro" : "Ativar modo escuro"
+    );
 
 
     localStorage.setItem(
@@ -43,6 +50,8 @@ export function configurarTema() {
     document.body.classList.add("dark-mode");
 
     botao.textContent = "☀️";
+
+    botao.setAttribute("aria-label", "Ativar modo claro");
 
   }
 
