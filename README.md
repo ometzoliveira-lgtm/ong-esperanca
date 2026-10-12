@@ -1,81 +1,37 @@
 # ONG Esperança
 
-Projeto web desenvolvido para a ONG Esperança, com o objetivo de apresentar suas iniciativas sociais, facilitar o contato com a organização e permitir o cadastro de pessoas interessadas em participar dos projetos.
-
-## Estrutura do projeto
-
-projeto.ong/
-├── README.md
-├── css/
-│   └── style.css
-├── html/
-│   ├── index.html
-│   ├── projetos.html
-│   ├── contato.html
-│   └── cadastro.html
-├── img/
-│   ├── logo.png
-│   ├── doacao.png
-│   ├── educacao.jpg
-│   ├── saude.jpg
-│   ├── sustentabilidade.jpg
-│   └── voluntariado.jpg
-└── js/
-    ├── forms.js
-    ├── interactions.js
-    ├── main.js
-    ├── masks.js
-    ├── storage.js
-    └── views.js
-
-## Tecnologias utilizadas
-
-O projeto foi desenvolvido utilizando HTML5, CSS3 e JavaScript.
-
-O JavaScript foi organizado em módulos ES6, utilizando `import` e `export` para separar as responsabilidades da aplicação.
+Projeto web desenvolvido como atividade prática da disciplina de Desenvolvimento Front-end, com foco na apresentação de iniciativas sociais e na interação com pessoas interessadas em uma organização sem fins lucrativos.
 
 ## Funcionalidades
 
-A aplicação possui páginas para apresentação da ONG, visualização dos projetos, contato e cadastro.
+- Apresentação da organização e de seus projetos.
+- Páginas de contato e cadastro.
+- Formulários com validação e máscaras de entrada.
+- Navegação responsiva e alternância de tema visual.
+- Armazenamento local de dados no navegador.
 
-Entre as principais funcionalidades estão a navegação entre páginas, menu responsivo, alteração de tema visual, máscaras para CPF, telefone e CEP, validação dos formulários e armazenamento de informações no `localStorage`.
+## Tecnologias
 
-## Organização do JavaScript
+- HTML5
+- CSS3
+- JavaScript ES6 Modules
+- Git e GitHub
+- Vite
 
-O arquivo main.js coordena a inicialização da aplicação.
+## Organização do código
 
-O arquivo views.js contém os templates utilizados para a renderização das páginas da aplicação.
+O JavaScript está dividido em módulos com responsabilidades específicas, incluindo inicialização da aplicação, renderização de páginas, formulários, interações, máscaras e armazenamento local.
 
-O arquivo forms.js concentra as funcionalidades relacionadas aos formulários e suas validações.
+## Como executar
 
-O arquivo interactions.js reúne funcionalidades de interação, como menu, tema e navegação.
+Consulte os scripts disponíveis no `package.json` e siga as instruções de instalação e execução verificadas para o projeto.
 
-O arquivo masks.js aplica as máscaras de entrada para CPF, telefone e CEP.
+## Observações
 
-O arquivo storage.js centraliza as operações de armazenamento utilizando o `localStorage`.
+O armazenamento utiliza `localStorage` no navegador. O projeto não deve ser considerado um sistema de cadastro seguro para dados pessoais reais sem uma arquitetura de back-end e medidas de segurança adequadas.
 
-## Armazenamento de dados
-
-Os dados enviados pelos formulários são armazenados no `localStorage` do navegador.
-
-As informações são convertidas para JSON com `JSON.stringify()` antes do armazenamento e recuperadas posteriormente com `JSON.parse()`.
-
-## Execução
-
-Para executar o projeto, abra o arquivo `index.html` localizado na pasta `html/` em um navegador compatível com JavaScript e módulos ES6.
-
-## Versionamento
-
-O projeto utiliza Git para controle de versão e segue uma organização baseada no GitFlow.
-
-A branch `master` representa a versão estável do projeto.
-
-A branch `develop` concentra o desenvolvimento contínuo.
-
-As branches `feature/` são utilizadas para desenvolver funcionalidades específicas de forma isolada antes da integração com a branch de desenvolvimento.
-
-## Autor
+## Autoria
 
 Eduarda Oliveira da Silva
 
-Projeto desenvolvido como atividade prática da disciplina de Desenvolvimento Front-end.
+Projeto acadêmico — Desenvolvimento Front-end.
